@@ -135,11 +135,150 @@ h1 {
 .app-item a {
     font-size: 16px;
     font-weight: 700;
-    color: #c4d2dd;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.silver {
+    color:  #c4d2dd;
+}
+
+.page-screen h2 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    color: #192b59;
+}
+
+.page-screen span {
+    font-size: 14px;
+    font-weight: 800;
+    color: #00bffe;
+    display: block;
+    
+}
+
+.page-clients h2{
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.page-clients span {
+    font-size: 18px;
+    font-weight: 800;
+    color: #85c8ff;
+    display: block;
+}
+
+p.box-clients  {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #8085b1;
+}
+
+p.name {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000958;
+}
+
+p.position {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1085e4;
+}
+
+.page-plan h2 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    color: #192b59;
+}
+
+.page-plan span {
+    font-size: 14px;
+    font-weight: 800;
+    color: #00bffe;
+    display: block;
+}
+
+.box-price-item h3 {
+    font-size: 70px;
+    font-weight: 800;
+    color: #000958;
+}
+
+.box-price-item p {
+    font-size: 14px;
+    font-weight: 700;
+    color: #0084ff;
     text-transform: uppercase;
 }
 
 
+.box-price-item ul li {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #8085b1;
+}
+
+.box-price-item a {
+    font-size: 14px;
+    font-weight: 700;
+    color: #8085b1;
+    text-transform: uppercase;
+
+}
+
+
+.page-team h2 {
+    font-size: 18px;
+    font-weight: 800;
+    color: #85c8ff;
+    text-transform: uppercase;
+}
+
+
+.page-team span {
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    display: block;
+}
+
+.team-position {
+    font-size: 14px;
+    font-weight: 800;
+    color: #1a88e1;
+    text-transform: uppercase;
+}
+
+.team-name {
+    font-size: 26px;
+    font-weight: 600;
+    color: #192b59;
+}
+
+
+.page-form h2 {
+    font-size: 50px;
+    font-weight: 600;
+    color: #192b59;
+}
+
+.footer p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #b6bae0;
+}
+
+.footer p a {
+    text-transform: uppercase;
+    color: #1085e4;
+}
 
 
 
