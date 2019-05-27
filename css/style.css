@@ -15,18 +15,81 @@ h1 {
     color: #192b59;
 }
 
+
 .nav {
     font-size: 12px;
     font-weight: 700;
+    letter-spacing: 2.7px;
     color: #6e7ea9;
     text-transform: uppercase;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+
+
+.btn-primary {
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #1085e4;
+    border:1px solid #1085e4;
+    padding: 20px 40px;
+    border-radius: 30px;
+}
+
+.btn-primary:hover {
+    color: #1085e4;
+    background-color: #fff;
+}
+
+
+.btn-secondary {
+    color: #7e8bae;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    background-color: #cbdbe8;
+    border:1px solid #cbdbe8;
+    padding: 20px 40px;
+    border-radius: 30px;
+}
+
+.btn-secondary:hover {
+    background-color: #fff;
 }
 
 .btn-free {
-    color: #fff;
+    padding: 21px 56px;
+    letter-spacing: 1.7px;
     font-weight: 400;
-    background-color: #1085e4;
 }
+
+.btn-info {
+    color: #8085b1;
+    background-color: transparent;
+    border: 1px solid #dce1e5;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    padding: 20px 40px;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+
+.btn-group a + a {
+    margin-left: 15px;
+}
+
 
 .grid h2 {
     font-size: 40px;
@@ -60,11 +123,6 @@ h1 {
     color: #dfe8ff;
 }
 
-.subscribe button {
-    font-size: 14px;
-    color: #1085e4;
-    font-weight: 600;
-}
 
 .subscribe h2 {
     font-size: 50px;
@@ -137,10 +195,6 @@ h1 {
     font-weight: 700;
     color: #fff;
     text-transform: uppercase;
-}
-
-.silver {
-    color:  #c4d2dd;
 }
 
 .page-screen h2 {
@@ -225,13 +279,6 @@ p.position {
     color: #8085b1;
 }
 
-.box-price-item a {
-    font-size: 14px;
-    font-weight: 700;
-    color: #8085b1;
-    text-transform: uppercase;
-
-}
 
 
 .page-team h2 {
