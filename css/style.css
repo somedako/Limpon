@@ -27,6 +27,10 @@ h1 {
     letter-spacing: -1.5px;
 }
 
+.content-app .title-h2 {
+    margin-bottom: 36px;
+}
+
 .title-h2 span {
     display: block;
     font-size: 16px;
@@ -367,7 +371,7 @@ h1 {
     background-size: 100px 87px;
 }
 
-.page-software .title-h2 {
+.page-software .title-h2, .page-analytics .title-h2 {
     max-width: 766px;
     margin-top: 12px;
     margin-bottom: 26px;
@@ -378,13 +382,74 @@ h1 {
     justify-content: flex-end;
 }
 
-.page-software img {
+.page-app-text {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #c4d2dd;
+    margin-top: 26px;
+    letter-spacing: 3.5px;
+    margin-bottom: 20px;
+}
+
+.page-app-list {
+    padding: 0;
+    list-style-type: none;
+    margin-left: -12px;
+}
+
+.page-app-list>li {
+    display: inline-block;
+}
+
+.page-app-list>li>a {
+    background-image: url(../img/app.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 175px;
+    height: 81px;
+}
+
+.page-app-list>li>a.page-app-android {
+    background-position: 0 0;
+}
+
+.page-app-list>li>a.page-app-ios {
+    background-position: -188px 0;
+}
+
+
+.content-app {
+    width: 55%;
+}
+
+.video-app {
+    position: absolute;
+    top: -36px;
+    right: -35px;
+}
+
+.flex-analytics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-analytics>div {
+    flex-basis: 53%;
+}
+
+.page-analytics-text {
+    margin-bottom: 24px;
+}
+
+.page-software .software-pic {
+    display: block;
+    width: 931px;
+    height: 936px;
     position: absolute;
     top: 37px;
     left: 0px;
     background-image: url(../img/software.png);
-    width: 931px;
-    height: 936px;
   
 }
 
@@ -392,7 +457,7 @@ h1 {
     flex-basis: 55%;
 }
 
-.page-software-icon {
+.settings-icon {
     display: block;
     background-image: url(../img/software-icon.png);
     background-repeat: no-repeat;
@@ -407,6 +472,12 @@ h1 {
     overflow: hidden;
     overflow-y: scroll;
 }
+
+.page-software-list::-webkit-scrollbar {width: 4px; height: 4px;}
+.page-software-list::-webkit-scrollbar-button {background-color: #1085e4;}
+.page-software-list::-webkit-scrollbar-track-piece {background-color: #a4aecc;}
+.page-software-list::-webkit-scrollbar-thumb {height: 50px; background-color: #1085e4; border-radius: 10px;}
+
 
 
 .page-software-list dt {
@@ -599,7 +670,129 @@ h1 {
 .box-subscribe-user input:-moz-placeholder {color:#b1c3ee;}
 .box-subscribe-user input:-ms-input-placeholder {color:#c0392b;}
 
+.page-control a {
+    padding-left: 64px;
+    padding-right: 62px; 
+}
 
+.flex-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-control>div {
+    flex-basis: 55%;
+}
+
+.page-control .title-h2 {
+    margin: 9px 0 26px 0;
+}
+
+.control-text {
+    margin-bottom: 50px;
+}
+
+.box-clients {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 63px;
+}
+
+.box-clients-item {
+    background-color: #fff;
+    padding: 21px 42px;
+    border-radius: 10px;
+    flex-basis: 31.5%;
+    box-sizing: border-box;
+    font-size: 14px;
+    box-shadow: 0 5px 6px rgba(180, 181, 181, 0.2);
+}
+
+.box-clients-item>p {
+    margin-bottom: 4px;
+}
+
+.box-clients-item .name {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000958;
+    margin-bottom: 0;
+    letter-spacing: -0.6px;
+    line-height: 1.1;
+}
+
+
+.box-clients-item .position {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #1085e4;
+    margin-top: 0;
+    letter-spacing: 3px;
+}
+
+.box-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.box-info>div {
+    padding-left: 17px;
+}
+
+.box-team {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 140px;
+}
+
+.box-team-item {
+    background-color: #fff;
+    flex-basis: 31.5%;
+    box-shadow: 0 5px 6px #f4f4f4;
+    position: relative;
+    padding: 193px 0 42px 0;
+}
+
+.box-team-item .position {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #1a88e1;
+    font-weight: 900;
+    margin-bottom: 0;
+    letter-spacing: 2.1px;
+}
+
+.box-team-item .name {
+    font-size: 26px;
+    color: #192b59;
+    font-weight: 600;
+    margin-top: 8px;
+    letter-spacing: -0.9px;
+}
+
+.box-team-item .avatar {
+    position: absolute;
+    top: -86px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.box-team-item .btn-more {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/btn-more.png);
+    background-repeat: no-repeat;
+    border: none;
+    margin: 0 auto;
+}
+
+.box-team-item .btn-more:focus {
+    outline: none;
+}
 
 
 
@@ -639,6 +832,15 @@ h1 {
 
 }
 
+.page-app {
+    
+    padding: 60px 0 99px 0;
+}
+
+.page-app .wrap {
+    position: relative;
+}
+
 .page-software {
     padding: 109px 0 156px 0;
     position: relative;
@@ -654,10 +856,68 @@ h1 {
     margin-top: -9px;
 }
 
+.page-plan {
+    padding: 81px 0 121px 0;
+}
+
 .page-screen, .page-plan {
     text-align: center;
 }
 
 .page-screen {
     padding: 116px 0 0 0;
+}
+
+.page-analytics {
+    background-image: url(../img/bg-analytics.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 117px 0 135px 0;
+}
+
+.page-control {
+    background-image: url(../img/control-bg.png);
+    background-repeat: no-repeat;
+    background-position:  center;
+    background-size: cover;
+    padding: 117px 0 135px 0;
+    
+}
+
+
+.page-clients {
+    position: relative;
+    margin-top: 120px;
+    padding: 43px 0 0 0;
+
+}
+
+.page-clients::before {
+    content: '';
+    display: block;
+    background-image: url(../img/clients-bg.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.page-clients .title-40, .page-team .title-40 {
+    color: #fff;
+}
+
+.page-clients .title-40 span, .page-team .title-40 span {
+    color: #85c8ff;
+}
+
+.page-team {
+    text-align: center;
+    background-image: url(../img/bg-team.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 82px 0 20px 0;
 }
