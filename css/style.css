@@ -418,6 +418,20 @@ h1 {
     background-position: -188px 0;
 }
 
+.intro {
+    color: rgba(0, 0, 0, 0.04);
+    font-size: 300px;
+    font-weight: 900;
+    line-height: 0;
+    position: absolute;
+    top: 40px;
+    left: -278px;
+    right: 0;
+    text-align: center;
+    margin: 0;
+
+}
+
 
 .content-app {
     width: 55%;
