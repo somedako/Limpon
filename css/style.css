@@ -555,7 +555,7 @@ h1 {
     line-height: 0;
     position: absolute;
     top: 40px;
-    left: -278px;
+    left: 0;
     right: 0;
     text-align: center;
     margin: 0;
@@ -593,15 +593,18 @@ h1 {
     margin-bottom: 24px;
 }
 
-.page-software .software-pic {
+.software-pic {
     display: block;
-    width: 931px;
+    width: 48%;
     height: 936px;
     position: absolute;
-    top: 37px;
+    top: 42px;
     left: 0px;
     background-image: url(../img/software.png);
-  
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    z-index: -1;
 }
 
 .page-software-flex>div {
@@ -653,6 +656,7 @@ h1 {
         justify-content: space-around;
     list-style-type: none;
     margin-top: 76px;
+    flex-wrap: wrap;
 }
 
 .list-stat>li {
@@ -1160,6 +1164,8 @@ h1 {
             align-items: center;
     max-width: 1100px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .flex-form>div {
@@ -1444,15 +1450,46 @@ h1 {
 
     .video-app {
         position: absolute;
-        top: -23px;
+        top: -332px;
         right: 0;
+        left: 0;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+    .page-app {
+        padding: 380px 0 99px 0;
     }
 
     .video-app img {
-        width: 482px;
+        width: 337px;
+        margin-left: 50px;
     }
 }
 
+@media (max-width: 1300px) {
+    .software-pic {
+        display: none;
+    }
+
+    .page-software {
+        padding: 60px 0;
+    }
+
+    .page-software-list {
+        height: 266px;
+        max-width: 800px;
+        margin-right: 50px;
+    }
+
+    .page-software-flex {
+        justify-content: center;
+    }
+
+    .page-software-flex>div {
+        flex-basis: 100%;
+    }
+}
 
 @media (max-width: 1100px) {
     .nav, .screen-img {
@@ -1488,10 +1525,11 @@ h1 {
     .page-header {
         padding: 53px 0 150px 0;
     }
-}
+    .content-app {
+        width: 100%;
+        text-align: center;
+    }
 
-
-@media (max-width: 1050px) {
     .list-company-item {
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%;
@@ -1550,9 +1588,91 @@ h1 {
     }
 }
 
+@media (max-width: 930px) {
+    .intro {
+        display: none;
+    }
+
+    .box-price {
+        flex-wrap: wrap;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .box-price-item {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+        
+    }
+
+    .page-team {
+        padding: 40px 0 90px 0;
+    }
+    .box-team {
+        flex-wrap: wrap;
+        max-width: 415px;
+        margin: 0 auto;
+    }
+
+    .box-team-item {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+        padding: 0px 25px 0px 25px;
+    }
+
+    .avatar {
+        display: none;
+    }
+
+    .flex-analytics img, .flex-control img, .flex-form img {
+        display: none;
+    }
+
+    .flex-analytics>div, .flex-control>div, .flex-form>div  {
+        margin: 0 auto;
+    }
+
+    .box-clients {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .box-clients-item {
+        margin-top: 7px;
+        padding: 7px 40px;
+    }
+
+    .page-clients::before {
+        background-repeat: repeat;
+        height: 107%;
+    }
+
+    .primary {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 700px) {
+    .list-stat>li {
+        flex-basis: 34%;
+        margin-bottom: 30px;
+    }
+}
+
 @media (max-width: 600px) {
     h1 {
         font-size: 40px;
         margin: 0 auto 30px;
     }
+
+    .btn-group {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+
 }
